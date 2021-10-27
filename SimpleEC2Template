@@ -1,0 +1,78 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "ae95d48d-a3ac-47a3-aea1-506d4e3e8365": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 480,
+                    "y": 370
+                },
+                "z": 0
+            },
+            "c6ee5b9a-f394-4f46-8f2c-626a44b86bce": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 570,
+                    "y": 370
+                },
+                "z": 0
+            },
+            "df433d24-5ad6-4a94-b88a-f79e6f9696fa": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 660,
+                    "y": 370
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "EC2I3C31M": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": "ami-0f44d9081083b94f7" ,
+                "InstanceType": "t2.micro"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "ae95d48d-a3ac-47a3-aea1-506d4e3e8365"
+                }
+            }
+        },
+        "EC2IW00S": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": "ami-0f44d9081083b94f7" ,
+                "InstanceType": "t2.micro"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "c6ee5b9a-f394-4f46-8f2c-626a44b86bce"
+                }
+            }
+        },
+        "EC2I3UWUI": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": "ami-0f44d9081083b94f7" ,
+                "InstanceType": "t2.micro"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "df433d24-5ad6-4a94-b88a-f79e6f9696fa"
+                }
+            }
+        }
+    }
+}
