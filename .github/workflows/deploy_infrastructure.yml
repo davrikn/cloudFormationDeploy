@@ -37,5 +37,5 @@ jobs:
     - name: Deploy to AWS CloudFormation
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
-        name: SimpleEC2
+        name: SimpleEC2_GA
         template: SimpleEC2Template.json
