@@ -8,6 +8,7 @@ on:
 
 jobs:
   cluster:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Deploy stack to AWS
     runs-on: ubuntu-latest
     outputs:
