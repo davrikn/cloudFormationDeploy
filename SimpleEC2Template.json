@@ -55,6 +55,7 @@
         "EC2I3C31M": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
+                "ImageId": "ami-0f44d9081083b94f7",
                 "InstanceType": "t2.micro"
             },
             "Metadata": {
