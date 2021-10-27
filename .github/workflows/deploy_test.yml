@@ -1,11 +1,7 @@
-name: Deploy Cluster
+name: Deploy to test
 
 on:
   workflow_dispatch:
-    inputs:
-      keypair:
-        description: 'SSH Key Pair'
-        required: true
 
 jobs:
   cluster:
@@ -37,5 +33,5 @@ jobs:
     - name: Deploy to AWS CloudFormation
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
-        name: ${{ steps.env-name.outputs.environment }}-cluster
+        name: ${{ steps.env-name.outputs.environment }}-test
         template: SimpleEC2Template.json
