@@ -37,5 +37,5 @@ jobs:
     - name: Deploy to AWS CloudFormation
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
-        name: SimpleEC2_GA
+        name: ${{ steps.env-name.outputs.environment }}-cluster
         template: SimpleEC2Template.json
