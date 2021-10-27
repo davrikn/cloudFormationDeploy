@@ -1,7 +1,12 @@
 name: Deploy to test
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - Master
+  pull_request:
+    branches:
+      - Master
 
 jobs:
   cluster:
