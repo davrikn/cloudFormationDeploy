@@ -1,14 +1,14 @@
-name: Deploy Cluster
+name: Deploy staging
 
 on:
-  workflow_dispatch:
-    inputs:
-      keypair:
-        description: 'SSH Key Pair'
-        required: true
+  workflow_run:
+    workflows: ["Deploy test"]
+    types:
+      - completed
 
 jobs:
   cluster:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Deploy stack to AWS
     runs-on: ubuntu-latest
     outputs:
@@ -33,9 +33,8 @@ jobs:
         ENVIRONMENT=`echo $REPO | tr "/" "-"`
         echo "Environment name: $ENVIRONMENT"
         echo "::set-output name=environment::$ENVIRONMENT"
-
     - name: Deploy to AWS CloudFormation
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
-        name: ${{ steps.env-name.outputs.environment }}-cluster
+        name: ${{ steps.env-name.outputs.environment }}-staging
         template: SimpleEC2Template.json
