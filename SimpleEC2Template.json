@@ -55,7 +55,7 @@
         "EC2I3C31M": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0f44d9081083b94f7",
+                "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro"
             },
             "Metadata": {
@@ -67,7 +67,7 @@
         "EC2IW00S": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0f44d9081083b94f7",
+                "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro"
             },
             "Metadata": {
@@ -79,7 +79,7 @@
         "EC2I3UWUI": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0f44d9081083b94f7",
+                "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro"
             },
             "Metadata": {
@@ -91,7 +91,7 @@
         "EC2I57G": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0f44d9081083b94f7",
+                "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro"
             },            "Metadata": {
                 "AWS::CloudFormation::Designer": {
