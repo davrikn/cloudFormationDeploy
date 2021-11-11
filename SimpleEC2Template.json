@@ -57,7 +57,9 @@
             "Properties": {
                 "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro",
-                "KeyName":  "aws-eb"
+                "KeyName":  "aws-eb",
+                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
+
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -70,7 +72,8 @@
             "Properties": {
                 "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro",
-                "KeyName":  "aws-eb"
+                "KeyName":  "aws-eb",
+                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -83,7 +86,8 @@
             "Properties": {
                 "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro",
-                "KeyName":  "aws-eb"
+                "KeyName":  "aws-eb",
+                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -97,6 +101,7 @@
                 "ImageId": "ami-0ef6e396a49d14abb",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
+                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
