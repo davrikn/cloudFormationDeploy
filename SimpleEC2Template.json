@@ -55,7 +55,7 @@
         "EC2I3C31M": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0ef6e396a49d14abb",
+                "ImageId": "ami-06ce59c4d44fc5ed4",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
                 "SecurityGroupIds": ["sg-069026fc6cbaae262"]
@@ -70,7 +70,7 @@
         "EC2IW00S": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0ef6e396a49d14abb",
+                "ImageId": "ami-06ce59c4d44fc5ed4",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
                 "SecurityGroupIds": ["sg-069026fc6cbaae262"]
@@ -84,7 +84,7 @@
         "EC2I3UWUI": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0ef6e396a49d14abb",
+                "ImageId": "ami-06ce59c4d44fc5ed4",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
                 "SecurityGroupIds": ["sg-069026fc6cbaae262"]
@@ -98,7 +98,7 @@
         "EC2I57G": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0ef6e396a49d14abb",
+                "ImageId": "ami-06ce59c4d44fc5ed4",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
                 "SecurityGroupIds": ["sg-069026fc6cbaae262"]
