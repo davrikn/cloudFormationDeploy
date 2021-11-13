@@ -41,8 +41,8 @@ jobs:
         name: ${{ steps.env-name.outputs.environment }}-test
         template: SimpleEC2Template.json
 
-      - name: Check server response
-        uses: lakuapik/gh-actions-http-status@v1
-        with:
-          sites: '["http://63.35.141.167"]'
-          expected: '[200]'
+    - name: Check server response
+      uses: lakuapik/gh-actions-http-status@v1
+      with:
+        sites: '["http://63.35.141.167"]'
+        expected: '[200]'
