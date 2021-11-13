@@ -44,5 +44,5 @@ jobs:
       - name: Check server response
         uses: lakuapik/gh-actions-http-status@v1
         with:
-          sites: '["63.35.141.167"]'
+          sites: '["http://63.35.141.167"]'
           expected: '[200]'
