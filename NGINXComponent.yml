@@ -1,0 +1,20 @@
+name: nGinxInstall
+description: Installs nGinx
+schemaVersion: 1.0
+
+phases:
+  - name: build
+    steps:
+      - name: InstallnGinx
+        action: ExecuteBash
+        inputs:
+          commands:
+            - sudo apt-get install nginx -y
+      - name: ReplaceIndex
+        action: ExecuteBash
+        inputs:
+          commands:
+            - sudo chmod a+w /var/www/html -R
+            - sudo rm /var/www/html/index.nginx-debian.html
+            - echo "Hello world" > /var/www/html/index.html
+
