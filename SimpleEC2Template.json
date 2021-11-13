@@ -95,6 +95,7 @@
                 }
             }
         },
+
         "EC2I57G": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
@@ -106,6 +107,15 @@
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "ea1d2848-7bc8-408c-823a-c298d732224f"
+                }
+            }
+        },
+        "ElasticIP": {
+            "Type": "AWS::EC2::EIPAssociation",
+            "Properties": {
+                "AllocationId": "eipalloc-0a8775d56eb20d32c",
+                "InstanceId": {
+                    "Ref": "EC2I57G"
                 }
             }
         }
