@@ -58,8 +58,10 @@
                 "ImageId": "ami-0f9407f68dc039539",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
-                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
-
+                "SecurityGroupIds": [
+                    {
+                    "Ref": "SecGroup"
+                    }]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -73,7 +75,10 @@
                 "ImageId": "ami-0f9407f68dc039539",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
-                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "SecGroup"
+                    }]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -87,7 +92,10 @@
                 "ImageId": "ami-0f9407f68dc039539",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
-                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "SecGroup"
+                    }]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -102,7 +110,10 @@
                 "ImageId": "ami-0f9407f68dc039539",
                 "InstanceType": "t2.micro",
                 "KeyName":  "aws-eb",
-                "SecurityGroupIds": ["sg-069026fc6cbaae262"]
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "SecGroup"
+                    }]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -117,6 +128,26 @@
                 "InstanceId": {
                     "Ref": "EC2I57G"
                 }
+            }
+        },
+        "SecGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "SecurityGroupIngress": [{
+                    "CidrIp":  "0.0.0.0/0",
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80
+                }, {
+                    "CidrIp":  "0.0.0.0/0",
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22
+                }],
+                "SecurityGroupEgress": [{
+                    "CidrIp":  "0.0.0.0/0",
+                    "IpProtocol": "-1"
+                }]
             }
         }
     }
