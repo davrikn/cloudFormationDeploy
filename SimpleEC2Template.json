@@ -133,6 +133,7 @@
         "SecGroup": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
+                "GroupDescription": "Webservers with SSH connectivity",
                 "SecurityGroupIngress": [{
                     "CidrIp":  "0.0.0.0/0",
                     "IpProtocol": "tcp",
