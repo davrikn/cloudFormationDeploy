@@ -114,7 +114,7 @@
                     {
                         "Ref": "SecGroup"
                     }]
-            },
+            }, 
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "ea1d2848-7bc8-408c-823a-c298d732224f"
