@@ -12,6 +12,7 @@
    - Copy the KeyMaterial data into a file which you call aws-eb.pem, it should look like this:  
  
  ![img_1.png](img_1.png)
+   - To connect to the VMs you can use the `ssh -i "key-name" ubuntu@ip` assuming your working directory in powershell contains the key file
  - ElasticIp
    - To create an elastic IP go into the AWS console run the following command (Naming it is optional)
    - `aws ec2 allocate-address`
